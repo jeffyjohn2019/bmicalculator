@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center" style="width: 90%;">
+            <div class="col-md-6">
+
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary text-white">
+                        <h3>BMI Calculator</h3>
+                    </div>
+
+                    <div class="card-body m-3">
+
+                        <div class="mb-3">
+                            <label class="form-label">Weight (kg)</label>
+                            <input type="number" id="weight" class="form-control" placeholder="Enter weight">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Height (cm)</label>
+                            <input type="number" id="height" class="form-control" placeholder="Enter height">
+                        </div>
+
+                        <div class="d-grid">
+                            <button class="btn btn-primary" id="calculateBMI">
+                                Calculate BMI
+                            </button>
+                        </div>
+
+                        <div class="mt-4 text-center">
+                            <h4 id="result"></h4>
+                            <p id="category"></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary text-white">
+                        <h3>BMI Categories</h3>
+                    </div>
+
+                    <div class="card-body m-4 ">
+                        <table class="table mb-0">
+
+                            <thead class="table-light">
+                                <tr>
+                                    <th>BMI Category</th>
+                                    <th>BMI Range</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Underweight</td>
+                                    <td>Below 18.5</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Healthy</td>
+                                    <td>18.5 – 24.9</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Overweight</td>
+                                    <td>25.0 – 29.9</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Obesity</td>
+                                    <td>30.0 or above</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
